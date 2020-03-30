@@ -1,0 +1,35 @@
+<launch>
+
+<arg name="mapName" default="mappy1"/>
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find SLAM_v1)/maps/$(arg mapName).yaml">
+  </node>
+
+   <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <rosparam file="$(find SLAM_v1)/config/amcl_params.yaml" command="load" />
+    <!-- We have a holonomic robot! Overwrite yaml config here! -->
+    <param name="odom_model_type" value="diff"/>
+   
+  </node>
+
+  <!-- Run Move Base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find SLAM_v1)/config/costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find SLAM_v1)/config/costmap_common.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find SLAM_v1)/config/costmap_local.yaml" command="load" />
+    <rosparam file="$(find SLAM_v1)/config/costmap_global.yaml" command="load" />
+    <rosparam file="$(find SLAM_v1)/config/teb_local_planner.yaml" command="load" />
+
+    <param name="base_global_planner" value="global_planner/GlobalPlanner" />
+    <param name="planner_frequency" value="1.0" />
+    <param name="planner_patience" value="5.0" />
+
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    <param name="controller_frequency" value="5.0" />
+    <param name="controller_patience" value="15.0" />
+  </node>
+
+  <!-- Run AMCL -->
+ 
+
+</launch>
