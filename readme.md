@@ -25,5 +25,5 @@
 1. Rosboot in all terminals
 2. Launch new terminal launch SLAM_v1 turtleSim.launch
 3. Launch new terminal launch SLAM_v1 navigation.launch
-4. Launch new terminal rviz, 2d pos estimate
+4. Launch new terminal rviz. Use "2d pos estimate" align the position of the robot in Rviz and Gazebo
 5. Launch new terminal rosrun SLAM_v1 pepe.py
