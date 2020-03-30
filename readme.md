@@ -3,7 +3,7 @@
 
 
 ##### Imporant
-.dae files inside the world file have hardcoded path names. these need to set locally to run the navigation
+.dae files inside the world file have hardcoded path names. These need to set locally to run the navigation.
 
 ### Setup
 1. Follow marian tutorial on github (https://github.com/marckri/ROS-Helper/blob/master/doc/turtlebot3-sim.md)
