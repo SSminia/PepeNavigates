@@ -18,12 +18,12 @@
 
 ### Coding and tweaking
 10. Nagivate and tweak navigation variables with Rviz and rqt
-11. use example python to set goal using movebase
-12. create python script to loop between goals, values harded coded in the script itself
+11. Use example python to set goal using movebase
+12. Create python script to loop between goals, values harded coded in the script itself
  
 ### How to launch
-rosboot in all terminals
-new terminal launch SLAM_v1 turtleSim.launch
-new terminal launch SLAM_v1 navigation.launch
-new terminal rviz, 2d pos estimate
-new terminal rosrun SLAM_v1 pepe.py
+1. Rosboot in all terminals
+2. Launch new terminal launch SLAM_v1 turtleSim.launch
+3. Launch new terminal launch SLAM_v1 navigation.launch
+4. Launch new terminal rviz, 2d pos estimate
+5. Launch new terminal rosrun SLAM_v1 pepe.py
