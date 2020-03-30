@@ -1,8 +1,8 @@
-#Pepe Slam
-#####ros navigation simulation
+# Pepe Slam
+##### ros navigation simulation
 .dae files inside the world file have hardcoded path names. these need to set locally to run the navigation
 
-###setup
+### setup
 1. follow marian tutorial on github (https://github.com/marckri/ROS-Helper/blob/master/doc/turtlebot3-sim.md)
 2. create new package
 3. copied default gazebo launchfile into package
@@ -12,7 +12,7 @@
 7. mapping file based on suii (https://github.com/RoboHubEindhoven/suii/tree/master/suii_bringup/launch)
 8. navigation file based on suii
 9. manual mapping using teleop_twist_joy
-###coding and tweaking
+### coding and tweaking
 10. nagivate and tweak with Rviz and rqt
 11. use example python to set goal
 12. create python script to loop between goals
