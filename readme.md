@@ -17,9 +17,9 @@
 9. The map was done manually, moving the robot around using teleop_twist_joy
 
 ### Coding and tweaking
-10. Nagivate and tweak navigation variables with Rviz and rqt
-11. Use example python to set goal using movebase
-12. Create python script to loop between goals, values harded coded in the script itself
+1. Nagivate and tweak navigation variables with Rviz and rqt
+2. Use example python to set goal using movebase
+3. Create python script to loop between goals, values harded coded in the script itself
  
 ### How to launch
 1. Rosboot in all terminals
